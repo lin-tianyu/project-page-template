@@ -1,5 +1,6 @@
 # Academic Project Page Template
 This is an academic paper project page template, modified for my habits.
+
 Example project page: https://lin-tianyu.github.io/project-page-template/
 
 
