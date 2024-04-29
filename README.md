@@ -2,8 +2,7 @@
 This is an academic paper project page template, modified for my habits.
 
 
-Example project page built using this template is:
-- https://lin-tianyu.github.io/project-page-template/
+Example project page: https://lin-tianyu.github.io/project-page-template/
 
 
 
@@ -23,12 +22,6 @@ You can generate your own `favicon.ico` at [favicon-generator](https://favicon.i
   - Update `index.html` for the project page (already anonymized); 
   - anonymize the repo via [Anonymous Github](https://anonymous.4open.science/)。
 5. Update authors/institutions/code/pdfs after your paper has been accepted.
-
-## Components
-- Methods (or Inspiration/Idea)
-- Image Carousel
-- Bibtex citation
-> More components can be enabled in `index.html`.
 
 ## Acknowledgments
 This project is the modification of the [Academic-project-page-template](https://github.com/eliahuhorwitz/Academic-project-page-template). Thanks!
