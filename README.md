@@ -18,8 +18,8 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 1. Use this template to create a repo;
 2. Add the code I'm working on into this repo, and keep developing;
 3. To prepare for a **double-blinded review process** after finishing the paper:
--   Update `index.html` for the project page (already anonymized); 
--   Anonymize the repo via [Anonymous Github](https://anonymous.4open.science/).
+ - Update `index.html` for the project page (already anonymized); 
+ - Anonymize the repo via [Anonymous Github](https://anonymous.4open.science/).
 5. Update authors/institutions/code/pdfs after acceptance.
 
 ## Acknowledgments
