@@ -1,7 +1,5 @@
 # Academic Project Page Template
 This is an academic paper project page template, modified for my habits.
-
-
 Example project page: https://lin-tianyu.github.io/project-page-template/
 
 
@@ -18,7 +16,7 @@ You can generate your own `favicon.ico` at [favicon-generator](https://favicon.i
 ## My workflow
 1. Use this template to create a repo;
 2. Add the code I'm working on into this repo, and keep developing;
-3. To prepare for a double-blinded review after finishing the paper:
+3. To prepare for a **double-blinded review process** after finishing the paper:
   - Update `index.html` for the project page (already anonymized); 
   - Anonymize the repo via [Anonymous Github](https://anonymous.4open.science/).
 5. Update authors/institutions/code/pdfs after acceptance.
