@@ -17,9 +17,9 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 
 ```
 The easiest way to do so:
-1. download this template as a `*.zip` file;
-2. decompress the zip file;
-3. upload the `static` folder and `index.html` file into the existing repo.
+   1. download this template as a `*.zip` file;
+   2. decompress the zip file;
+   3. upload the `static` folder and `index.html` file into the existing repo.
 ```
 
 </details>
