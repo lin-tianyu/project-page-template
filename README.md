@@ -16,11 +16,12 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 <summary>Mearge/add this repo to an existing repo;</summary>
 ```markdown
 The easiest way to do so:
-      1. download this template as a `*.zip` file;
-      2. decompress the zip file;
-      3. upload the `static` folder and `index.html` file into the existing repo.
+1. download this template as a `*.zip` file;
+2. decompress the zip file;
+3. upload the `static` folder and `index.html` file into the existing repo.
 ```
 </details>
+
 2. Working on the repo until you're ready to submit it somewhere;
 3. To prepare for a **double-blinded review process** after finishing the paper:
    - Anonymize the repo via [Anonymous Github](https://anonymous.4open.science/);
