@@ -14,7 +14,7 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 ### For repo with a webpage
 <details>
 <summary>Mearge/add this repo to an existing repo;</summary>
-```markdown
+```md
 The easiest way to do so:
 1. download this template as a `*.zip` file;
 2. decompress the zip file;
@@ -22,11 +22,12 @@ The easiest way to do so:
 ```
 </details>
 
-2. Working on the repo until you're ready to submit it somewhere;
+2. Working on the repo;
 3. To prepare for a **double-blinded review process** after finishing the paper:
+   - Build the webpage by editing `index.html` (already anonymized);
    - Anonymize the repo via [Anonymous Github](https://anonymous.4open.science/);
    - Share the anonymized repo link in the Abstract section.
-4. Update authors/institutions/code/pdfs after acceptance.
+5. Update authors/institutions/code/pdfs after acceptance.
 
 **Important Notes** 
 1. Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be mine. You can generate your own `favicon.ico` at [favicon-generator](https://favicon.io/favicon-generator/).
