@@ -14,18 +14,20 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 ### For repo with a webpage
 <details>
 <summary>1. Mearge/add this repo to an existing repo;</summary>
+
 ```
 The easiest way to do so:
 1. download this template as a `*.zip` file;
 2. decompress the zip file;
 3. upload the `static` folder and `index.html` file into the existing repo.
 ```
+
 </details>
 
 2. Working on the repo;
 3. To prepare for a **double-blinded review process** after finishing the paper:
    - Build the webpage by editing `index.html` (already anonymized);
-   - Anonymize the repo via [Anonymous Github](https://anonymous.4open.science/);
+   - Anonymize the entire repo via [Anonymous Github](https://anonymous.4open.science/);
    - Share the anonymized repo link in the Abstract section.
 5. Update authors/institutions/code/pdfs after acceptance.
 
