@@ -12,14 +12,14 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 3. Edit the `index.html` file to control the content of the website, the webpage will be deployed automatically by [Github Pages](https://pages.github.com/).
 
 ### For repo with a webpage
-1. Mearge/add this repo to an existing repo;
-
 <details>
-<summary>1. Mearge/add this repo to an existing repo;</summary>
+<summary>Mearge/add this repo to an existing repo;</summary>
+```markdown
 The easiest way to do so:
       1. download this template as a `*.zip` file;
       2. decompress the zip file;
       3. upload the `static` folder and `index.html` file into the existing repo.
+```
 </details>
 2. Working on the repo until you're ready to submit it somewhere;
 3. To prepare for a **double-blinded review process** after finishing the paper:
