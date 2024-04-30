@@ -13,8 +13,8 @@ Example project page: https://lin-tianyu.github.io/project-page-template/
 
 ### For repo with a webpage
 <details>
-<summary>Mearge/add this repo to an existing repo;</summary>
-```md
+<summary>1. Mearge/add this repo to an existing repo;</summary>
+```
 The easiest way to do so:
 1. download this template as a `*.zip` file;
 2. decompress the zip file;
