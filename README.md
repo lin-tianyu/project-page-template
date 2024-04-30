@@ -33,7 +33,7 @@ The easiest way to do so:
 **Important Notes** 
 1. Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be mine. You can generate your own `favicon.ico` at [favicon-generator](https://favicon.io/favicon-generator/).
 2. By default, authors/institutions/code/pdfs are **anonymous**, you can specify them after your paper's acceptance.
-3. The webpage will be deployed automatically by [Github Pages](https://pages.github.com/)
+3. The webpage will be deployed automatically by [Github Pages](https://pages.github.com/).
 
 
 ## Acknowledgments
