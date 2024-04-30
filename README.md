@@ -30,7 +30,7 @@ The easiest way to do so:
    - Share the anonymized repo link in the Abstract section.
 5. Update authors/institutions/code/pdfs after acceptance.
 
-**Important Notes** 
+## NOTES
 1. Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be mine. You can generate your own `favicon.ico` at [favicon-generator](https://favicon.io/favicon-generator/).
 2. By default, authors/institutions/code/pdfs are **anonymous**, you can specify them after your paper's acceptance.
 3. The webpage will be deployed automatically by [Github Pages](https://pages.github.com/).
