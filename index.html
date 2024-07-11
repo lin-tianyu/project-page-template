@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -26,15 +27,13 @@
 
   <title>SDSeg</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,6 +43,7 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
 
@@ -52,46 +52,63 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><span style="background: linear-gradient(to right,  indigo, skyblue, violet, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-              Stable
-          </span> Diffusion Segmentation <br>
+            <h1 class="title is-1 publication-title">
+              <span
+                style="background: linear-gradient(to right,  indigo, skyblue, violet, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Stable
+              </span> Diffusion Segmentation <br>
               for Biomedical Images with <br>
-              Single-step Reverse Process</h1>
+              <b>Single-step Reverse Process</b></h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://lin-tianyu.github.io/" target="_blank">Tianyu Lin</a>,</span>
+                <a href="https://lin-tianyu.github.io/" target="_blank">Tianyu Lin</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a target="_blank">Zhiguang Chen</a>,</span>
+                <a target="_blank">Zhiguang Chen</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="https://github.com/zzzyzh" target="_blank">Zhonghao Yan</a>,</span> 
+                <a href="https://github.com/zzzyzh" target="_blank">Zhonghao Yan</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="https://github.com/yuweijiang" target="_blank">Weijiang Yu</a><sup>*</sup>,</span> 
+                <a href="https://github.com/yuweijiang" target="_blank">Weijiang Yu</a><sup>2*</sup>,</span>
               <span class="author-block">
-                <a target="_blank">Fudan Zheng</a><sup>*</sup></span> 
+                <a target="_blank">Fudan Zheng</a><sup>2*</sup></span>
             </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Anonymous Institution<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>School of Biomedical Engineering, Sun Yat-sen University, 
+                <sup>2</sup>School of Computer Science and Engineering, Sun Yat-sen University, 
+                <sup>3</sup>International School, Beijing University of Posts and Telecommunications<br>MICCAI 2024
+              </span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2406.18361.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Arxiv</span>
-                      </a>
+            <!-- ArXiv abstract Link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2406.18361" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>ArXiv</span>
+              </a>
+            </span>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2406.18361.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Arxiv Paper</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/lin-tianyu/Stable-Diffusion-Seg" target="_blank"
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/lin-tianyu/Stable-Diffusion-Seg" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -100,133 +117,157 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser-->
-<section class="hero teaser">
-<div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/framework-v2.jpg" alt="MY ALT TEXT", width="800"/>
-      <h2 class="subtitle has-text-centered">
-        The overview of SDSeg.
-      </h2>
+  <!-- Teaser-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/framework-v2.jpg" alt="MY ALT TEXT" , width="800" />
+        <h2 class="subtitle has-text-centered">
+          The overview of SDSeg.
+        </h2>
+      </div>
     </div>
-  </div>
-</section> 
-<!-- End teaser -->
+  </section>
+  <!-- End teaser -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Diffusion models have demonstrated their effectiveness across various generative tasks. However, when applied to medical image segmentation, these models encounter several challenges, including significant resource and time requirements. They also necessitate a multi-step reverse process and multiple samples to produce reliable predictions. To address these challenges, we introduce the first latent diffusion segmentation model, named SDSeg, built upon stable diffusion (SD). SDSeg incorporates a straightforward latent estimation strategy to facilitate a single-step reverse process and utilizes latent fusion concatenation to remove the necessity for multiple samples. Extensive experiments indicate that SDSeg surpasses existing state-of-the-art methods on five benchmark datasets featuring diverse imaging modalities. Remarkably, SDSeg is capable of generating stable predictions with a solitary reverse step and sample, epitomizing the model's stability as implied by its name. The code has been anonymized and is available at <a href="https://anonymous.4open.science/r/anonymized-code">Anonymous Code</a>.
-          </p>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Diffusion models have demonstrated their effectiveness across various generative tasks. However, when
+              applied to medical image segmentation, these models encounter several challenges, including significant
+              resource and time requirements. They also necessitate a multi-step reverse process and multiple samples to
+              produce reliable predictions. To address these challenges, we introduce the first latent diffusion
+              segmentation model, named SDSeg, built upon stable diffusion (SD). SDSeg incorporates a straightforward
+              latent estimation strategy to facilitate a single-step reverse process and utilizes latent fusion
+              concatenation to remove the necessity for multiple samples. Extensive experiments indicate that SDSeg
+              surpasses existing state-of-the-art methods on five benchmark datasets featuring diverse imaging
+              modalities. Remarkably, SDSeg is capable of generating stable predictions with a solitary reverse step and
+              sample, epitomizing the model's stability as implied by its name. The code has been anonymized and is
+              available at <a href="https://anonymous.4open.science/r/anonymized-code">Anonymous Code</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Methods</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item", align="center">
-        <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT", width="800"/>
-        <h2 class="subtitle has-text-centered">
-          Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
-        </h2>
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Methods</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item" , align="center">
+            <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT" , width="800" />
+            <h2 class="subtitle has-text-centered">
+              Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
+            </h2>
+          </div>
+          <div class="item" , align="center">
+            <img src="static/images/StabilityEvaluation.jpg" alt="MY ALT TEXT" , width="600" />
+            <h2 class="subtitle has-text-centered">
+              Illustration of our Stability Evaluation on REF. To prepare for the evaluation, we first conduct M times
+              of inference process. Then, <b>Dataset-level Stability (DS)</b>(in red) is evaluated on every two sets of
+              the inference results; <b>Instance-level Stability (IS)</b>(in blue) is estimated on every two
+              segmentation maps of each image conditioning. In practice, we choose the first inference results to
+              conduct the DS evaluation with the other M-1 sets, and the first instance of segmentation result to
+              conduct IS evaluation with the other M-1 segmentation maps.
+            </h2>
+          </div>
+          <div class="item" , align="center">
+            <img src="static/images/Conditioner.jpg" alt="MY ALT TEXT" , width="800" />
+            <h2 class="subtitle has-text-centered">
+              Visualization of the latent representations of medical images from the trainable vision encoder, on CVC.
+              At iteration 0, the encoder pre-trained on natural images couldn't capture enough meaningful semantic
+              features for segmentation. During training, the conditioning encoder gradually learns to focus on
+              segmentation targets.
+            </h2>
+          </div>
+          <div class="item" , align="center">
+            <img src="static/images/StabilityVisual.jpg" alt="MY ALT TEXT" , width="600" />
+            <h2 class="subtitle has-text-centered">
+              Visualization of the predicted probability maps in reverse process on STS. The horizontal axis denotes
+              DDIM sampling steps. <b>Upper two rows</b>: SDSeg trained for only 5,000 steps, sub-optimal results appear
+              in early reverse process; <b>Lower two rows</b>: SDSeg trained for 50,000 steps, DDIM sampler generates
+              fine and stable results during the entire reverse process. This demonstrates that SDSeg can generate great
+              results under limited steps of the reverse process.
+            </h2>
+          </div>
+        </div>
       </div>
-      <div class="item", align="center">
-        <img src="static/images/StabilityEvaluation.jpg" alt="MY ALT TEXT", width="600"/>
-        <h2 class="subtitle has-text-centered">
-          Illustration of our Stability Evaluation on REF. To prepare for the evaluation, we first conduct M times of inference process. Then, <b>Dataset-level Stability (DS)</b>(in red) is evaluated on every two sets of the inference results; <b>Instance-level Stability (IS)</b>(in blue) is estimated on every two segmentation maps of each image conditioning. In practice, we choose the first inference results to conduct the DS evaluation with the other M-1 sets, and the first instance of segmentation result to conduct IS evaluation with the other M-1 segmentation maps.
-        </h2>
-      </div>
-       <div class="item", align="center">
-        <img src="static/images/Conditioner.jpg" alt="MY ALT TEXT", width="800"/>
-        <h2 class="subtitle has-text-centered">
-          Visualization of the latent representations of medical images from the trainable vision encoder, on CVC. At iteration 0, the encoder pre-trained on natural images couldn't capture enough meaningful semantic features for segmentation. During training, the conditioning encoder gradually learns to focus on segmentation targets.
-        </h2>
-      </div>
-     <div class="item", align="center">
-      <img src="static/images/StabilityVisual.jpg" alt="MY ALT TEXT", width="600"/>
-      <h2 class="subtitle has-text-centered">
-        Visualization of the predicted probability maps in reverse process on STS. The horizontal axis denotes DDIM sampling steps. <b>Upper two rows</b>: SDSeg trained for only 5,000 steps, sub-optimal results appear in early reverse process; <b>Lower two rows</b>: SDSeg trained for 50,000 steps, DDIM sampler generates fine and stable results during the entire reverse process. This demonstrates that SDSeg can generate great results under limited steps of the reverse process.
-     </h2>
-   </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </div>
+  </section>
+  <!-- End image carousel -->
 
-<!-- Image carousel -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Other Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item", align="center">
-        <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT", width="800"/>
-        <h2 class="subtitle has-text-centered">
-          Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
-        </h2>
+  <!-- Image carousel -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Other Results</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item" , align="center">
+            <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT" , width="800" />
+            <h2 class="subtitle has-text-centered">
+              Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
+            </h2>
+          </div>
+          <div class="item" , align="center">
+            <img src="static/images/StabilityEvaluation.jpg" alt="MY ALT TEXT" , width="600" />
+            <h2 class="subtitle has-text-centered">
+              Illustration of our Stability Evaluation on REF. To prepare for the evaluation, we first conduct M times
+              of inference process. Then, <b>Dataset-level Stability (DS)</b>(in red) is evaluated on every two sets of
+              the inference results; <b>Instance-level Stability (IS)</b>(in blue) is estimated on every two
+              segmentation maps of each image conditioning. In practice, we choose the first inference results to
+              conduct the DS evaluation with the other M-1 sets, and the first instance of segmentation result to
+              conduct IS evaluation with the other M-1 segmentation maps.
+            </h2>
+          </div>
+          <div class="item" , align="center">
+            <img src="static/images/Conditioner.jpg" alt="MY ALT TEXT" , width="800" />
+            <h2 class="subtitle has-text-centered">
+              Visualization of the latent representations of medical images from the trainable vision encoder, on CVC.
+              At iteration 0, the encoder pre-trained on natural images couldn't capture enough meaningful semantic
+              features for segmentation. During training, the conditioning encoder gradually learns to focus on
+              segmentation targets.
+            </h2>
+          </div>
+          <div class="item" , align="center">
+            <img src="static/images/StabilityVisual.jpg" alt="MY ALT TEXT" , width="600" />
+            <h2 class="subtitle has-text-centered">
+              Visualization of the predicted probability maps in reverse process on STS. The horizontal axis denotes
+              DDIM sampling steps. <b>Upper two rows</b>: SDSeg trained for only 5,000 steps, sub-optimal results appear
+              in early reverse process; <b>Lower two rows</b>: SDSeg trained for 50,000 steps, DDIM sampler generates
+              fine and stable results during the entire reverse process. This demonstrates that SDSeg can generate great
+              results under limited steps of the reverse process.
+            </h2>
+          </div>
+        </div>
       </div>
-      <div class="item", align="center">
-        <img src="static/images/StabilityEvaluation.jpg" alt="MY ALT TEXT", width="600"/>
-        <h2 class="subtitle has-text-centered">
-          Illustration of our Stability Evaluation on REF. To prepare for the evaluation, we first conduct M times of inference process. Then, <b>Dataset-level Stability (DS)</b>(in red) is evaluated on every two sets of the inference results; <b>Instance-level Stability (IS)</b>(in blue) is estimated on every two segmentation maps of each image conditioning. In practice, we choose the first inference results to conduct the DS evaluation with the other M-1 sets, and the first instance of segmentation result to conduct IS evaluation with the other M-1 segmentation maps.
-        </h2>
-      </div>
-       <div class="item", align="center">
-        <img src="static/images/Conditioner.jpg" alt="MY ALT TEXT", width="800"/>
-        <h2 class="subtitle has-text-centered">
-          Visualization of the latent representations of medical images from the trainable vision encoder, on CVC. At iteration 0, the encoder pre-trained on natural images couldn't capture enough meaningful semantic features for segmentation. During training, the conditioning encoder gradually learns to focus on segmentation targets.
-        </h2>
-      </div>
-     <div class="item", align="center">
-      <img src="static/images/StabilityVisual.jpg" alt="MY ALT TEXT", width="600"/>
-      <h2 class="subtitle has-text-centered">
-        Visualization of the predicted probability maps in reverse process on STS. The horizontal axis denotes DDIM sampling steps. <b>Upper two rows</b>: SDSeg trained for only 5,000 steps, sub-optimal results appear in early reverse process; <b>Lower two rows</b>: SDSeg trained for 50,000 steps, DDIM sampler generates fine and stable results during the entire reverse process. This demonstrates that SDSeg can generate great results under limited steps of the reverse process.
-     </h2>
-   </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </div>
+  </section>
+  <!-- End image carousel -->
 
 
 
 
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
+  <!-- Youtube video -->
+  <!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video Presentation</h2>
@@ -241,11 +282,11 @@
     </div>
   </div>
 </section> -->
-<!-- End youtube video -->
+  <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -269,15 +310,15 @@
     </div>
   </div>
 </section>  -->
-<!-- End video carousel --> 
+  <!-- End video carousel -->
 
 
 
 
 
 
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -285,42 +326,55 @@
       </div>
     </div>
   </section> -->
-<!--End paper poster -->
+  <!--End paper poster -->
 
 
-<!--BibTex citation -->
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTex</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @inproceedings{lin2024stable,
+          title={Stable Diffusion Segmentation for Biomedical Images with Single-step Reverse Process},
+          author={Lin, Tianyu and Chen, Zhiguang and Yan, Zhonghao and Yu, Weijiang and Zheng, Fudan},
+          booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+          year={2024},
+          organization={Springer}
+        }        
+      </code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
 
-    <!-- End of Statcounter Code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-  </body>
-  </html>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
