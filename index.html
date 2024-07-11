@@ -221,130 +221,6 @@
   </section>
 
 
-  <!-- Image carousel -->
-  <section class="section hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Methods</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item" , align="center">
-            <img src="static/images/LatentRep.jpg" alt="MY ALT TEXT" , width="800" />
-            <h2 class="subtitle has-text-centered">
-              Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT" , width="800" />
-            <h2 class="subtitle has-text-centered">
-              Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/StabilityEvaluation.jpg" alt="MY ALT TEXT" , width="600" />
-            <h2 class="subtitle has-text-centered">
-              Illustration of our Stability Evaluation on REF. To prepare for the evaluation, we first conduct M times
-              of inference process. Then, <b>Dataset-level Stability (DS)</b>(in red) is evaluated on every two sets of
-              the inference results; <b>Instance-level Stability (IS)</b>(in blue) is estimated on every two
-              segmentation maps of each image conditioning. In practice, we choose the first inference results to
-              conduct the DS evaluation with the other M-1 sets, and the first instance of segmentation result to
-              conduct IS evaluation with the other M-1 segmentation maps.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/Conditioner.jpg" alt="MY ALT TEXT" , width="800" />
-            <h2 class="subtitle has-text-centered">
-              Visualization of the latent representations of medical images from the trainable vision encoder, on CVC.
-              At iteration 0, the encoder pre-trained on natural images couldn't capture enough meaningful semantic
-              features for segmentation. During training, the conditioning encoder gradually learns to focus on
-              segmentation targets.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/StabilityVisual.jpg" alt="MY ALT TEXT" , width="600" />
-            <h2 class="subtitle has-text-centered">
-              Visualization of the predicted probability maps in reverse process on STS. The horizontal axis denotes
-              DDIM sampling steps. <b>Upper two rows</b>: SDSeg trained for only 5,000 steps, sub-optimal results appear
-              in early reverse process; <b>Lower two rows</b>: SDSeg trained for 50,000 steps, DDIM sampler generates
-              fine and stable results during the entire reverse process. This demonstrates that SDSeg can generate great
-              results under limited steps of the reverse process.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End image carousel -->
-
-  <!-- Image carousel -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Other Results</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item" , align="center">
-            <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT" , width="800" />
-            <h2 class="subtitle has-text-centered">
-              Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/StabilityEvaluation.jpg" alt="MY ALT TEXT" , width="600" />
-            <h2 class="subtitle has-text-centered">
-              Illustration of our Stability Evaluation on REF. To prepare for the evaluation, we first conduct M times
-              of inference process. Then, <b>Dataset-level Stability (DS)</b>(in red) is evaluated on every two sets of
-              the inference results; <b>Instance-level Stability (IS)</b>(in blue) is estimated on every two
-              segmentation maps of each image conditioning. In practice, we choose the first inference results to
-              conduct the DS evaluation with the other M-1 sets, and the first instance of segmentation result to
-              conduct IS evaluation with the other M-1 segmentation maps.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/Conditioner.jpg" alt="MY ALT TEXT" , width="800" />
-            <h2 class="subtitle has-text-centered">
-              Visualization of the latent representations of medical images from the trainable vision encoder, on CVC.
-              At iteration 0, the encoder pre-trained on natural images couldn't capture enough meaningful semantic
-              features for segmentation. During training, the conditioning encoder gradually learns to focus on
-              segmentation targets.
-            </h2>
-          </div>
-          <div class="item" , align="center">
-            <img src="static/images/StabilityVisual.jpg" alt="MY ALT TEXT" , width="600" />
-            <h2 class="subtitle has-text-centered">
-              Visualization of the predicted probability maps in reverse process on STS. The horizontal axis denotes
-              DDIM sampling steps. <b>Upper two rows</b>: SDSeg trained for only 5,000 steps, sub-optimal results appear
-              in early reverse process; <b>Lower two rows</b>: SDSeg trained for 50,000 steps, DDIM sampler generates
-              fine and stable results during the entire reverse process. This demonstrates that SDSeg can generate great
-              results under limited steps of the reverse process.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End image carousel -->
-
-
-
-
-  <!-- Youtube video -->
-  <!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-  <!-- End youtube video -->
-
-
   <!-- Video carousel -->
   <!-- <section class="hero is-small">
   <div class="hero-body">
@@ -390,7 +266,7 @@
 
 
   <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="section is-light" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTex</h2>
       <pre><code>
