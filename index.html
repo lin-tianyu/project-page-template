@@ -142,31 +142,15 @@
   <!-- End teaser -->
 
   <!-- Paper abstract -->
-  <section class="section hero">
+  <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Motivation</h2>
+          <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Highlights</h2>
           <div class="content has-text-justified">
-            <p>
-              Diffusion models have demonstrated their effectiveness across various generative tasks. However, when
-              applied to medical image segmentation, these models encounter several challenges, including significant
-              resource and time requirements. They also necessitate a multi-step reverse process and multiple samples to
-              produce reliable predictions. To address these challenges, we introduce the first latent diffusion
-              segmentation model, named SDSeg, built upon stable diffusion (SD). SDSeg incorporates a straightforward
-              latent estimation strategy to facilitate a single-step reverse process and utilizes latent fusion
-              concatenation to remove the necessity for multiple samples. Extensive experiments indicate that SDSeg
-              surpasses existing state-of-the-art methods on five benchmark datasets featuring diverse imaging
-              modalities. Remarkably, SDSeg is capable of generating stable predictions with a solitary reverse step and
-              sample, epitomizing the model's stability as implied by its name. The code has been anonymized and is
-              available at <a href="https://anonymous.4open.science/r/anonymized-code">Anonymous Code</a>.
-            </p>
-            <div class="item" , align="center">
-              <img src="static/images/LatentRep.jpg" alt="MY ALT TEXT" , width="800" />
-              <h2 class="subtitle has-text-centered">
-                Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
-              </h2>
-            </div>
+            🌟 Stable stands for
+            🌟 SDSeg only require single-step reverse process
           </div>
         </div>
       </div>
@@ -181,6 +165,12 @@
       <div class="container">
         <h2 class="title is-3">Methods</h2>
         <div id="results-carousel" class="carousel results-carousel">
+          <div class="item" , align="center">
+            <img src="static/images/LatentRep.jpg" alt="MY ALT TEXT" , width="800" />
+            <h2 class="subtitle has-text-centered">
+              Comparison of DDIM convergence speed with and without latent estimation loss on BTCV.
+            </h2>
+          </div>
           <div class="item" , align="center">
             <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT" , width="800" />
             <h2 class="subtitle has-text-centered">
