@@ -151,7 +151,8 @@
       </div>
       <p>
         🌟 <b><u>Stable</u></b> not only shows that SDSeg is built on Stable Diffusion but also indicates its remarkable stability.<br>
-        🌟 SDSeg eliminate the need for multi-step reverse process from diffusion-based models and only require <b>single-step reverse process</b>.
+        🌟 SDSeg only require a <b>single-step reverse process</b> to generate segmentation results.
+        
       </p>
     </div>
   </section>
@@ -162,34 +163,87 @@
         <div class="column is-four-fifths">
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
             Motivation</h2>
-        <h4 class="title is-5" style="text-align: center;">SDSeg aims at addressing several challenges faced by other diffusion-based segmentation methods: <br>(1) computing resource-consuming and time-consuming during training; <br>(2) multi-step reverse process and multiple-sample average scheme during inference stage.</h4>
-        Inspired by the Occam's razor, we believe that using 
+        <h5 class="title is-5" style="text-align: center;">
+          Inspired by the <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">Occam's razor</a>✂️, we believe that remove redundant techniques in conventional diffusion models can benefit segmentation task. 
+        </h5>
+
+        <div class="columns is-centered">
+        <!-- reenact. -->
+        <div class="column">
+          <div class="content">
+            <h4 class="title is-5" style="text-align: center;">&#11088; Challenges</h4>
+            <p>
+            (1) <b>Diffusion process in pixel-space</b> brings computing resource-consuming issue during training stage.<br>
+            (2) <b>Multi-step reverse process</b> and <b>multiple-sample average scheme</b> brings time-consuming issue during inference stage.
+            </p>
+          </div>
+        </div>
+        <!--/ reenact -->
+        <!-- swap. -->
+        <div class="column">
+          <h4 class="title is-5" style="text-align: center;">&#11088; Solutions</h4>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>
+              <!-- <br> -->
+              (1) Building our model based on Stable Diffusion model, which conduct diffusion process on a much smaller <b>latent space</b>.<br>
+              (2) Constructing a <b>single-step reverse process</b> with strong <b>stability among different initial noise</b> to speed up inference.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ swap. -->
+      </div>
+
             <div class="hero-body">
-              <img src="static/images/LatentRep.jpg" alt="MY ALT TEXT" , width="800" />
-              <!-- <h2 class="subtitle has-text-centered">The overview of SDSeg.</h2> -->
+              <img src="static/images/LatentRep.jpg" alt="MY ALT TEXT" , width="1000" />
+              <h4 class="subtitle has-text-centered"><b> visualization of latent representation maps.</b></h4>
+              The latent representations has high similarity among their corresponding segmentation maps, and segmentation maps have much less semantic knowledge comparing to RGB images. These observations indicate a much simpler diffusion process can be established.
             </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section hero">
+  <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
             Single-step Reverse process</h2>
+            <h5 class="title is-5" style="text-align: center;">
+              SDSeg only needs one step to generate the final segmentation map, which even has better result comparing to dozens of steps of DDIM sampling.
+            </h5>
             <div class="hero-body">
-              <img src="static/images/ReverseCurve.jpg" alt="MY ALT TEXT" , width="800" />
-              <!-- <h2 class="subtitle has-text-centered">The overview of SDSeg.</h2> -->
+              <img src="static/images/ReverseCurve.png" alt="MY ALT TEXT" , width="900" />
+              <h4 class="subtitle has-text-centered"><b>Comparison of DDIM convergence speed w/ and w/o latent estimation.</b></h4>
             </div>
-            <div class="hero-body">
-              <img src="static/images/ReverseProcess.jpeg" alt="MY ALT TEXT" , width="1600" />
-              <!-- <h2 class="subtitle has-text-centered">The overview of SDSeg.</h2> -->
-            </div>
+            <!-- <div class="hero-body">
+              <img src="static/images/ReverseProcess.jpeg" alt="MY ALT TEXT" , width="1000" />
+              <h4 class="subtitle has-text-centered">Visualization of the predicted probability maps in
+                reverse process.</h4>
+            </div> -->
         </div>
       </div>
     </div>
+
+    <!-- Video carousel -->
+   <section class="hero is-small">
+   <div class="hero-body">
+     <div class="container">
+       <div id="results-carousel" class="carousel results-carousel">
+         <div class="item item1" style="text-align:center;">
+           <img src="static/images/ReverseProcess-1.png" alt="MY ALT TEXT" , width="700" />
+         </div>
+         <div class="item item2" style="text-align:center;">
+           <img src="static/images/ReverseProcess-2.png" alt="MY ALT TEXT" , width="700" />
+         </div>
+       </div>
+     </div>
+   </div>
+   <h4 class="subtitle has-text-centered"><b>Visualization of the predicted probability maps in reverse process (DDIM sampler).</b></h4>
+ </section> 
+   <!-- End video carousel -->
   </section>
 
   <section class="section hero">
@@ -198,24 +252,35 @@
         <div class="column is-four-fifths">
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
             Stability Evaluation</h2>
+            <h5 class="title is-5" style="text-align: center;">
+              We proposed a Stability Evaluation scheme to measure the stability of a diffusion-based segmentation methods:
+            </h5>
+            <p style="text-align: left;">
+              <b>👉 Dataset-level Stability</b>: performs repeated inferences on test data to measure variability.<br>
+              <b>👉 Instance-level Stability</b>: examines the model’s consistency under varying initial noise.
+
+            </p>
             <div class="hero-body">
-              <img src="static/images/StabilityEvaluationV4.jpeg" alt="MY ALT TEXT" , width="800" />
-              <!-- <h2 class="subtitle has-text-centered">The overview of SDSeg.</h2> -->
+              <img src="static/images/StabilityEvaluationV4.jpeg" alt="MY ALT TEXT" , width="1000" />
+              <h2 class="subtitle has-text-centered"><b>The proposed Stability Evaluation scheme.</b></h2>
             </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section hero">
+  <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
             Other Qualitative Analysis</h2>
             <div class="hero-body">
-              <img src="static/images/Conditioner.jpeg" alt="MY ALT TEXT" , width="800" />
-              <!-- <h2 class="subtitle has-text-centered">The overview of SDSeg.</h2> -->
+              <img src="static/images/Conditioner.png" alt="MY ALT TEXT" , width="900" />
+              <h2 class="subtitle has-text-centered"><b>Visualization of the latent representations of medical images from the trainable
+                vision encoder.</b></h2>
+                  At iteration 0, the encoder pre-trained on natural images
+couldn’t capture enough meaningful semantic features for segmentation. During training, the conditioning encoder gradually learns to focus on segmentation targets.
             </div>
         </div>
       </div>
