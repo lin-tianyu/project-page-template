@@ -1,7 +1,9 @@
 # Academic Project Page Template
 This is an academic paper project page template, modified for my habits.
 
-Example project page: https://lin-tianyu.github.io/project-page-template/
+- Example project page **template**: https://lin-tianyu.github.io/project-page-template/
+
+- Example project page of my MICCAI 2024 work: https://lin-tianyu.github.io/Stable-Diffusion-Seg/
 
 
 

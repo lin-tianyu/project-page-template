@@ -53,36 +53,29 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <span
-                style="background: linear-gradient(to bottom,  indigo, skyblue, violet, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
-                Stable
-              </span> Diffusion Segmentation <br>
-              for Biomedical Images with 
-              <span
-                style="background: linear-gradient(to left,  indigo, skyblue, violet, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
-                Single-step
-              </span> Reverse Process</h1>
+              Title of the paper</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://lin-tianyu.github.io/" target="_blank">Tianyu Lin</a><sup>1</sup>,</span>
-              <span class="author-block">
+                <a href="https://lin-tianyu.github.io/" target="_blank">Tianyu Lin</a><sup>1*</sup></span>
+              <!-- <span class="author-block">
                 <a target="_blank">Zhiguang Chen</a><sup>2</sup>,</span>
               <span class="author-block">
                 <a href="https://github.com/zzzyzh" target="_blank">Zhonghao Yan</a><sup>3</sup>,</span>
               <span class="author-block">
                 <a href="https://github.com/yuweijiang" target="_blank">Weijiang Yu</a><sup>2*</sup>,</span>
               <span class="author-block">
-                <a target="_blank">Fudan Zheng</a><sup>2*</sup></span>
+                <a target="_blank">Fudan Zheng</a><sup>2*</sup></span> -->
             </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                {<sup>1</sup>School of Biomedical Engineering, 
+                <sup>1</sup>Institution<br>
+                <!-- {<sup>1</sup>School of Biomedical Engineering, 
                 <sup>2</sup>School of Computer Science and Engineering}, Sun Yat-sen University<br>
-                <sup>3</sup>International School, Beijing University of Posts and Telecommunications
+                <sup>3</sup>International School, Beijing University of Posts and Telecommunications -->
               </span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span><br>
-              <span class="author-block" style="background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;"><b>MICCAI 2024</b></span>
+              <span class="author-block" style="background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;"><b>Conference/Journal Name</b></span>
             </div>
 
 
@@ -135,7 +128,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <img src="static/images/framework-v2.jpg" alt="MY ALT TEXT" , width="700" />
-        <h4 class="subtitle has-text-centered">The overview of <b>SDSeg</b>.</h4>
+        <h4 class="subtitle has-text-centered">The overview of the proposed method.</h4>
       </div>
     </div>
   </section>
@@ -150,8 +143,8 @@
         </div>
       </div>
       <p>
-        🌟 <b><u>Stable</u></b> not only shows that SDSeg is built on Stable Diffusion but also indicates its remarkable stability.<br>
-        🌟 SDSeg only require a <b>single-step reverse process</b> to generate segmentation results.
+        🌟 Highlights are the summary of the proposed work. They can be contributions in the paper or preferred key points.<br>
+        🌟 Point 2
         
       </p>
     </div>
@@ -164,7 +157,7 @@
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
             Motivation</h2>
         <h5 class="title is-5" style="text-align: center;">
-          Inspired by the <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">Occam's razor</a>✂️, we believe that remove redundant techniques in conventional diffusion models can benefit segmentation task. 
+          Using a single sentence to summarize the motivation of the paper.
         </h5>
 
         <div class="columns is-centered">
@@ -173,8 +166,8 @@
           <div class="content">
             <h4 class="title is-5" style="text-align: center;">🔒 Challenges</h4>
             <p>
-            (1) <b>Diffusion process in pixel-space</b> brings computing resource-consuming issue during training stage.<br>
-            (2) <b>Multi-step reverse process</b> and <b>multiple-sample average scheme</b> brings time-consuming issue during inference stage.
+            (1) blablabla<br>
+            (2) blablabla
             </p>
           </div>
         </div>
@@ -186,8 +179,8 @@
             <div class="column content">
               <p>
               <!-- <br> -->
-              (1) Building our model based on Stable Diffusion model, which conduct diffusion process on a much smaller <b>latent space</b>.<br>
-              (2) Constructing a <b>single-step reverse process</b> with strong <b>stability among different initial noise</b> to speed up inference.
+            (1) blablabla<br>
+            (2) blablabla
               </p>
             </div>
           </div>
@@ -197,8 +190,8 @@
 
             <div class="hero-body">
               <img src="static/images/LatentRep.jpg" alt="MY ALT TEXT" , width="1000" />
-              <h4 class="subtitle has-text-centered"><b> visualization of latent representation maps.</b></h4>
-              The latent representations has high similarity among their corresponding segmentation maps, and segmentation maps have much less semantic knowledge comparing to RGB images. These observations indicate a much simpler diffusion process can be established.
+              <h4 class="subtitle has-text-centered"><b>Caption of the figure.</b></h4>
+              Detailed descriptions.
             </div>
         </div>
       </div>
@@ -210,13 +203,13 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
-            Single-step Reverse process</h2>
+            Module 1</h2>
             <h5 class="title is-5" style="text-align: center;">
-              SDSeg only needs ☝️ step to generate the final segmentation map, which even has better result comparing to dozens of steps of DDIM sampling.
+              Single sentence to summarize the first module of the paper.
             </h5>
             <div class="hero-body">
               <img src="static/images/ReverseCurve.png" alt="MY ALT TEXT" , width="900" />
-              <h4 class="subtitle has-text-centered"><b>Comparison of DDIM convergence speed w/ and w/o latent estimation.</b></h4>
+              <h4 class="subtitle has-text-centered"><b>Caption of the figure.</b></h4>
             </div>
             <!-- <div class="hero-body">
               <img src="static/images/ReverseProcess.jpeg" alt="MY ALT TEXT" , width="1000" />
@@ -241,7 +234,7 @@
        </div>
      </div>
    </div>
-   <h4 class="subtitle has-text-centered"><b>Visualization of the predicted probability maps in reverse process (DDIM sampler).</b></h4>
+   <h4 class="subtitle has-text-centered"><b>Showing rolling images here.</b></h4>
  </section> 
    <!-- End video carousel -->
   </section>
@@ -251,18 +244,18 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-2" style="background: linear-gradient(to right,  indigo, indigo, skyblue, indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
-            Stability Evaluation</h2>
+            Module 2</h2>
             <h5 class="title is-5" style="text-align: center;">
-              We proposed a Stability Evaluation scheme to measure the stability of any diffusion-based segmentation methods:
+            Single sentence to summarize the second module of the paper.
             </h5>
             <p style="text-align: left;">
-              <b>👉 Dataset-level Stability</b>: performs repeated inferences on test data to measure variability.<br>
-              <b>👉 Instance-level Stability</b>: examines the model’s consistency under varying initial noise.
+              <b>👉 Key point 1</b>: bnlablabla.<br>
+              <b>👉 Key point 2</b>: blablabla.
 
             </p>
             <div class="hero-body">
               <img src="static/images/StabilityEvaluationV4.jpeg" alt="MY ALT TEXT" , width="1000" />
-              <h2 class="subtitle has-text-centered"><b>The proposed Stability Evaluation scheme.</b></h2>
+              <h2 class="subtitle has-text-centered"><b>Caption of the figure.</b></h2>
             </div>
         </div>
       </div>
@@ -277,10 +270,8 @@
             Other Qualitative Analysis</h2>
             <div class="hero-body">
               <img src="static/images/Conditioner.png" alt="MY ALT TEXT" , width="900" />
-              <h2 class="subtitle has-text-centered"><b>Visualization of the latent representations of medical images from the trainable
-                vision encoder.</b></h2>
-                  At iteration 0, the encoder pre-trained on natural images
-couldn’t capture enough meaningful semantic features for segmentation. During training, the conditioning encoder gradually learns to focus on segmentation targets.
+              <h2 class="subtitle has-text-centered"><b>Caption of the figure.</b></h2>
+                  Detailed descriptions.
             </div>
         </div>
       </div>
